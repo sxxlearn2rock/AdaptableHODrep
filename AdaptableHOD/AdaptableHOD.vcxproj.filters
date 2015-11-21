@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Processors">
+      <UniqueIdentifier>{92ae3c86-b0db-4e99-b3f6-b147e0d08c5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Processors">
+      <UniqueIdentifier>{6feb6c4a-a2aa-4e03-8c96-fe7ec6931de9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Processors\DenoiseStrategies">
+      <UniqueIdentifier>{086bb383-6da0-45d8-9a49-9d04042841fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Processors\DenoiseStrategies">
+      <UniqueIdentifier>{2d046e6c-df51-4b53-a9f4-d3979107ab24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Processors\SegmentStrategies">
+      <UniqueIdentifier>{ae582178-b817-4de1-9952-8a85eeba8ae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Processors\SegmentStrategies">
+      <UniqueIdentifier>{558f47cd-3f6b-46fb-8c16-6c292ced8c89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HOD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Processors\DenoiseStrategies\DefaultDenoiseStrategy.cpp">
+      <Filter>源文件\Processors\DenoiseStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="Processors\DenoiseStrategies\LateralInhibition.cpp">
+      <Filter>源文件\Processors\DenoiseStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="Processors\DenoiseStrategies\MaxMedianFilter.cpp">
+      <Filter>源文件\Processors\DenoiseStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="Processors\SegmentStrategy.cpp">
+      <Filter>源文件\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="Processors\SegmentStrategies\DefaultSegmentStrategy.cpp">
+      <Filter>源文件\Processors\SegmentStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="Processors\SegmentStrategies\Ksw2dSegment.cpp">
+      <Filter>源文件\Processors\SegmentStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="Processors\SegmentStrategies\KswSegment.cpp">
+      <Filter>源文件\Processors\SegmentStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="Processors\SegmentStrategies\OtsuSegment.cpp">
+      <Filter>源文件\Processors\SegmentStrategies</Filter>
+    </ClCompile>
+    <ClCompile Include="DenoiseProcessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SegmentProcessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HOD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\DenoiseStrategies\DefaultDenoiseStrategy.h">
+      <Filter>头文件\Processors\DenoiseStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\DenoiseStrategies\LateralInhibition.h">
+      <Filter>头文件\Processors\DenoiseStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\DenoiseStrategies\MaxMedianFilter.h">
+      <Filter>头文件\Processors\DenoiseStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\DenoiseStrategy.h">
+      <Filter>头文件\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\SegmentStrategy.h">
+      <Filter>头文件\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\strategies.h">
+      <Filter>头文件\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\SegmentStrategies\DefaultSegmentStrategy.h">
+      <Filter>头文件\Processors\SegmentStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\SegmentStrategies\Ksw2dSegment.h">
+      <Filter>头文件\Processors\SegmentStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\SegmentStrategies\KswSegment.h">
+      <Filter>头文件\Processors\SegmentStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="Processors\SegmentStrategies\OtsuSegment.h">
+      <Filter>头文件\Processors\SegmentStrategies</Filter>
+    </ClInclude>
+    <ClInclude Include="DenoiseProcessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SegmentProcessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
