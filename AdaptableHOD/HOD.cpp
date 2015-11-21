@@ -4,14 +4,26 @@
 
 HOD::HOD(void)
 {
+	init();
+}
+
+HOD::HOD(string backgroundImgPath)
+{
+	mBackgroundMat = cv::imread(backgroundImgPath);
+	init();
+}
+
+
+void HOD::init()
+{
 	mDenoiseProcessor = DenoiseProcessor::getInstance();
 	//初始化去噪策咯
-//	mDenoiseProcessor->setDenoiseStrategy(DefaultDenosieStrategy::getInstance());
+	//	mDenoiseProcessor->setDenoiseStrategy(DefaultDenosieStrategy::getInstance());
 	mDenoiseProcessor->setDenoiseStrategy(LateralInhibition::getInstance());
 
 	mSegmentProcessor = SegmentProcessor::getInstance();
 	//初始化分割策咯
-//	mSegmentProcessor->setSegmentStrategy(DefaultSegmentStrategy::getInstance());
+	//	mSegmentProcessor->setSegmentStrategy(DefaultSegmentStrategy::getInstance());
 	mSegmentProcessor->setSegmentStrategy(KswSegment::getInstance());
 }
 
@@ -31,6 +43,11 @@ void HOD::RealtimeAlgorithm(Byte* inputImg , int iCol , int iRow,  bool &result,
 {
 	//注意传进来的是彩色图
 	Mat input(iRow, iCol, CV_8UC3, inputImg);
+	if (mBackgroundMat.data)
+	{	
+		//消除固定背景噪声
+		cv::addWeighted(input, 1, mBackgroundMat, -1, 0, input);	
+	}
 	mInputMat = input;	
 	mDenoiseProcessor->process(mInputMat, mDenoiseMat);
 	mSegmentProcessor->process(mDenoiseMat, mSegmentMat, mMorphMat, mCoordinates, mRotatedRects);
@@ -40,19 +57,19 @@ void HOD::RealtimeAlgorithm(Byte* inputImg , int iCol , int iRow,  bool &result,
 }
 
 
-void HOD::PeriodAlgorithm(	float * inputImg ,	float * visibleImg,	int iCol ,int iRow,int vCol,int vRow,
-											bool needReturn,Byte*& outputImg,Byte*& fusionImg)
-{
-
-}
-
-void HOD::PeriodAlgorithm(	Byte* inputImg ,	Byte* visibleImg,	int iCol ,int iRow,int vCol,int vRow,
-											bool needReturn,Byte*& outputImg,Byte*& fusionImg)
-{
-
-}
-
-void HOD::PeriodAlgorithm(Byte * inputImg ,int iCol ,int iRow,bool needReturn,Byte*& outputImg	)
-{
-
-}
+//void HOD::PeriodAlgorithm(	float * inputImg ,	float * visibleImg,	int iCol ,int iRow,int vCol,int vRow,
+//											bool needReturn,Byte*& outputImg,Byte*& fusionImg)
+//{
+//
+//}
+//
+//void HOD::PeriodAlgorithm(	Byte* inputImg ,	Byte* visibleImg,	int iCol ,int iRow,int vCol,int vRow,
+//											bool needReturn,Byte*& outputImg,Byte*& fusionImg)
+//{
+//
+//}
+//
+//void HOD::PeriodAlgorithm(Byte * inputImg ,int iCol ,int iRow,bool needReturn,Byte*& outputImg	)
+//{
+//
+//}

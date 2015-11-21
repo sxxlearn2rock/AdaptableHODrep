@@ -81,6 +81,7 @@
     <ClCompile Include="DenoiseProcessor.cpp" />
     <ClCompile Include="HOD.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MultFramesProcessors.cpp" />
     <ClCompile Include="Processors\DenoiseStrategies\DefaultDenoiseStrategy.cpp" />
     <ClCompile Include="Processors\DenoiseStrategies\LateralInhibition.cpp" />
     <ClCompile Include="Processors\DenoiseStrategies\MaxMedianFilter.cpp" />
@@ -94,6 +95,7 @@
   <ItemGroup>
     <ClInclude Include="DenoiseProcessor.h" />
     <ClInclude Include="HOD.h" />
+    <ClInclude Include="MultFramesProcessors.h" />
     <ClInclude Include="Processors\DenoiseStrategies\DefaultDenoiseStrategy.h" />
     <ClInclude Include="Processors\DenoiseStrategies\LateralInhibition.h" />
     <ClInclude Include="Processors\DenoiseStrategies\MaxMedianFilter.h" />

@@ -9,19 +9,23 @@ typedef unsigned char Byte;
 #include "./Processors/SegmentStrategy.h"
 
 #include <vector>
+#include <string>
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-using std::vector;
+using std::vector; using std::string;
 using cv::Mat;  using cv::RotatedRect;
 
 class HOD
 {
 public:
 	HOD(void);
+	HOD(string backgroundImgPath);
 	~HOD(void);
+
+	void init();
 
 	//实时处理模式下的单帧处理算法接口
 	//实时处理每帧图像，同时将结果图像与可见光融合
@@ -71,7 +75,7 @@ public:
 		bool needReturn,		//由上层设定是否需要返回每帧的处理结构，如果needReturn为true则需要返回下面的参数
 		Byte* outputImg,		//结果图像
 		Byte* fusionImg		//可见光与结果图像的融合图像
-		)
+		);
 
 		//重载的周期处理函数，输入图像为unsigned char*
 		void PeriodAlgorithm(
@@ -84,8 +88,8 @@ public:
 		bool needReturn,
 		Byte*& outputImg,
 		Byte*& fusionImg
-		)
-
+		);
+		
 		//重载的周期处理函数，没有包括可见光和融合部分
 		void PeriodAlgorithm(
 		Byte * inputImg ,		
@@ -93,10 +97,11 @@ public:
 		int iRow,
 		bool needReturn,
 		Byte*& outputImg
-		)
+		);
 
 
 private:
+	Mat mBackgroundMat;
 	//各个阶段的图像
 	Mat mInputMat;
 	Mat mDenoiseMat;
