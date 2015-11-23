@@ -1,47 +1,19 @@
-﻿生成启动时间为 11/21/2015 8:50:04 PM。
-     1>项目“D:\SXX\Projects\AdaptableHOD\AdaptableHOD\AdaptableHOD.vcxproj”在节点 2 上(rebuild 个目标)。
-     1>_PrepareForClean:
-         正在删除文件“Debug\AdaptableHOD.lastbuildstate”。
-       InitializeBuildStatus:
+﻿生成启动时间为 11/23/2015 4:24:13 PM。
+     1>项目“D:\SXX\Projects\AdaptableHOD\AdaptableHOD\AdaptableHOD.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
          正在创建“Debug\AdaptableHOD.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         D:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DenoiseProcessor.cpp HOD.cpp main.cpp MultFramesProcessors.cpp Processors\DenoiseStrategies\DefaultDenoiseStrategy.cpp Processors\DenoiseStrategies\LateralInhibition.cpp Processors\DenoiseStrategies\MaxMedianFilter.cpp Processors\SegmentStrategies\DefaultSegmentStrategy.cpp Processors\SegmentStrategies\Ksw2dSegment.cpp Processors\SegmentStrategies\KswSegment.cpp Processors\SegmentStrategies\OtsuSegment.cpp Processors\SegmentStrategy.cpp SegmentProcessor.cpp
-         SegmentProcessor.cpp
-         SegmentStrategy.cpp
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\segmentstrategy.cpp(36): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\segmentstrategy.cpp(37): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\segmentstrategy.cpp(45): warning C4018: “<”: 有符号/无符号不匹配
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\segmentstrategy.cpp(51): warning C4018: “<”: 有符号/无符号不匹配
-         OtsuSegment.cpp
-         KswSegment.cpp
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\segmentstrategies\kswsegment.cpp(73): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\segmentstrategies\kswsegment.cpp(82): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-         Ksw2dSegment.cpp
-         DefaultSegmentStrategy.cpp
-         MaxMedianFilter.cpp
-         LateralInhibition.cpp
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(39): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(40): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(43): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(79): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(80): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(84): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(85): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(91): warning C4244: “=”: 从“float”转换到“unsigned char”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(92): warning C4244: “=”: 从“float”转换到“unsigned char”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(93): warning C4244: “=”: 从“float”转换到“unsigned char”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(94): warning C4244: “=”: 从“float”转换到“unsigned char”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(111): warning C4244: “=”: 从“float”转换到“unsigned char”，可能丢失数据
-     1>d:\sxx\projects\adaptablehod\adaptablehod\processors\denoisestrategies\lateralinhibition.cpp(142): warning C4244: “=”: 从“float”转换到“unsigned char”，可能丢失数据
-         DefaultDenoiseStrategy.cpp
-         MultFramesProcessors.cpp
+         D:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ImageFushion.cpp SingleFramesProcessor.cpp main.cpp
          main.cpp
-         HOD.cpp
-         DenoiseProcessor.cpp
+         ImageFushion.cpp
+         正在生成代码...
+         正在编译...
+         SingleFramesProcessor.cpp
          正在生成代码...
        Link:
          D:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\SXX\Projects\AdaptableHOD\Debug\AdaptableHOD.exe" /INCREMENTAL /NOLOGO opencv_calib3d2410d.lib opencv_contrib2410d.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_gpu2410d.lib opencv_highgui2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib opencv_objdetect2410d.lib opencv_ts2410d.lib opencv_video2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AdaptableHOD.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\SXX\Projects\AdaptableHOD\Debug\AdaptableHOD.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\SXX\Projects\AdaptableHOD\Debug\AdaptableHOD.lib" /MACHINE:X86 Debug\DenoiseProcessor.obj
-         Debug\HOD.obj
+         Debug\ImageFushion.obj
+         Debug\SingleFramesProcessor.obj
          Debug\main.obj
          Debug\MultFramesProcessors.obj
          Debug\DefaultDenoiseStrategy.obj
@@ -59,8 +31,8 @@
        FinalizeBuildStatus:
          正在删除文件“Debug\AdaptableHOD.unsuccessfulbuild”。
          正在对“Debug\AdaptableHOD.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“D:\SXX\Projects\AdaptableHOD\AdaptableHOD\AdaptableHOD.vcxproj”(rebuild 个目标)的操作。
+     1>已完成生成项目“D:\SXX\Projects\AdaptableHOD\AdaptableHOD\AdaptableHOD.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:09.27
+已用时间 00:00:04.08

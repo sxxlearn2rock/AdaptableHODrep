@@ -79,7 +79,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DenoiseProcessor.cpp" />
-    <ClCompile Include="HOD.cpp" />
+    <ClCompile Include="ImageFushion.cpp" />
+    <ClCompile Include="SingleFramesProcessor.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MultFramesProcessors.cpp" />
     <ClCompile Include="Processors\DenoiseStrategies\DefaultDenoiseStrategy.cpp" />
@@ -94,7 +95,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DenoiseProcessor.h" />
-    <ClInclude Include="HOD.h" />
+    <ClInclude Include="ImageFushion.h" />
+    <ClInclude Include="SingleFramesProcessor.h" />
     <ClInclude Include="MultFramesProcessors.h" />
     <ClInclude Include="Processors\DenoiseStrategies\DefaultDenoiseStrategy.h" />
     <ClInclude Include="Processors\DenoiseStrategies\LateralInhibition.h" />

@@ -36,9 +36,6 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="HOD.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Processors\DenoiseStrategies\DefaultDenoiseStrategy.cpp">
       <Filter>源文件\Processors\DenoiseStrategies</Filter>
     </ClCompile>
@@ -72,11 +69,14 @@
     <ClCompile Include="MultFramesProcessors.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SingleFramesProcessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageFushion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HOD.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Processors\DenoiseStrategies\DefaultDenoiseStrategy.h">
       <Filter>头文件\Processors\DenoiseStrategies</Filter>
     </ClInclude>
@@ -114,6 +114,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MultFramesProcessors.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleFramesProcessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageFushion.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

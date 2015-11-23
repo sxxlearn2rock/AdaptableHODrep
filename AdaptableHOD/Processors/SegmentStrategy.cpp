@@ -47,13 +47,13 @@ void SegmentStrategy::positionResult( Mat &srcImage, Mat &dstImage, std::vector<
 		rotatedRects.push_back(minAreaRect( Mat(contours[i]) )) ;
 	}
 
-	cv::Point2f rect_points[4]; 
-	for( int i = 0; i < rotatedRects.size(); i++ )
-	{
-		rotatedRects[i].points( rect_points );
-		for( int j = 0; j < 4; j++ )
-		cv::line(dstImage, rect_points[j], rect_points[(j+1)%4], cv::Scalar(128), 1, 8 );		
-	}
+// 	cv::Point2f rect_points[4]; 
+// 	for( int i = 0; i < rotatedRects.size(); i++ )
+// 	{
+// 		rotatedRects[i].points( rect_points );
+// 		for( int j = 0; j < 4; j++ )
+// 		cv::line(dstImage, rect_points[j], rect_points[(j+1)%4], cv::Scalar(128), 1, 8 );		
+// 	}
 
 	/*std::vector<cv::Rect> boundRect(contours.size());
 	for (int i = 0; i < contours.size(); i++)
